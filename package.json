@@ -1,0 +1,23 @@
+{
+  "name": "bot_event",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Dzu",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/rest": "^1.3.0",
+    "@google-cloud/local-auth": "^2.1.0",
+    "chalk": "^4.1.2",
+    "discord-api-types": "^0.37.16",
+    "discord.js": "^14.6.0",
+    "dotenv": "^16.0.3",
+    "google-spreadsheet": "^3.3.0",
+    "googleapis": "^105.0.0",
+    "moment": "^2.29.4"
+  }
+}
