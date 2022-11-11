@@ -76,7 +76,7 @@ module.exports = {
           });
 
         //Chiều        
-        cron.schedule('30 16 * * *', () => {
+        cron.schedule('20 16 * * *', () => {
             console.log('Thông báo chiều');
             channel_trao_doi.send({embeds: [embed_menu]  }).then(msg => {
                 setTimeout(() => msg.delete(), 3600000)
