@@ -40,7 +40,7 @@ module.exports = {
         }
                 
         //send response of modal to channel
-        interaction.guild.channels.cache.get('1037922061437390878').send({embeds: [Embed]})
+        interaction.guild.channels.cache.get('938415945838374972').send({embeds: [Embed]})
 
         let getGoogleSheet = async () => {
             try {
