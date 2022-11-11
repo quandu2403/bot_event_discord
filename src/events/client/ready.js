@@ -7,7 +7,7 @@ module.exports = {
     async execute(client, interaction) {
         console.log(`Ready!!! ${client.user.tag} is logged in and online!`)
 
-        cron.schedule('00 39 14 * * 0-6', () => {
+        cron.schedule('00 41 14 * * 0-6', () => {
             interaction.guild.channels.cache.get('1037922061437390878').send('Test')
           }, {
             scheduled: true,
