@@ -64,29 +64,27 @@ module.exports = {
                 }
             ]);
         // Sáng
-
-        cron.schedule('00 00 07 * * 0-7', () => {
-            console.log("Thông báo Sáng")
+            
+        cron.schedule('0 7 * * *', () => {
+            console.log('Thông báo sáng');
             channel_trao_doi.send({embeds: [embed_scheduler]  }).then(msg => {
                 setTimeout(() => msg.delete(), 3600000)
               }).catch((err) => {console.log(err)}) ;
           }, {
             scheduled: true,
             timezone: "Asia/Ho_Chi_Minh"
-          });          
-        
-        //Chiều
-        
+          });
 
-        cron.schedule('00 00 16 * * 0-7', () => {
-            console.log("Thông báo Chiều")
+        //Chiều        
+        cron.schedule('30 16 * * *', () => {
+            console.log('Thông báo chiều');
             channel_trao_doi.send({embeds: [embed_menu]  }).then(msg => {
                 setTimeout(() => msg.delete(), 3600000)
               }).catch((err) => {console.log(err)}) ;
           }, {
             scheduled: true,
             timezone: "Asia/Ho_Chi_Minh"
-          });  
+          });
         // cron.schedule('* * * * *', () => {
         //     console.log('Nếu không set gì hết thì mặc định sẽ chạy mỗi phút 1 lần');
         //     channel_trao_doi.send({embeds: [embed_scheduler]  }).then(msg => {
