@@ -5,6 +5,7 @@ module.exports = {
         .setName('menu')
         .setDescription('Hiển thị danh sách câu lệnh!'),
     async execute(interaction, client) {
+        const emoji = '<:TuiTienADA:1039145538047713350>'
         const embed = new EmbedBuilder()
             .setTitle(`Bảng câu lệnh!`)
             .setColor(`#CC5F4E`)
@@ -26,8 +27,8 @@ module.exports = {
                     inline: false
                 },
                 {
-                    name: `> Thêm thông tin thành viên 👥`,
-                    value: '`/info`',
+                    name: `> Hiển thị ví donate ${emoji}`,
+                    value: '`$cevi`',
                     inline: false
                 }
             ]);
