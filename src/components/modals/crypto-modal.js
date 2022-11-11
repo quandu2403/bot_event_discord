@@ -38,10 +38,11 @@ module.exports = {
         else {
             Embed.addFields({ name: '> Thông tin thêm.', value: `${interaction.fields.getTextInputValue("testValueInput3")}` })
         }
-                
+        channel_thongbao = await  client.channels.cache.get('938415945838374972')
         //send response of modal to channel
-        interaction.guild.channels.cache.get('938415945838374972').send({embeds: [Embed]})
-        interaction.guild.channels.cache.get('938415945838374972').send('@everyone')
+        channel_thongbao.send({embeds: [Embed]});
+        channel_thongbao.send('@everyone')
+
         let getGoogleSheet = async () => {
             try {
                 let currentDate = new Date();
