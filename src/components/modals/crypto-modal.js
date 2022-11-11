@@ -41,7 +41,7 @@ module.exports = {
                 
         //send response of modal to channel
         interaction.guild.channels.cache.get('938415945838374972').send({embeds: [Embed]})
-
+        interaction.guild.channels.cache.get('938415945838374972').send('@everyone')
         let getGoogleSheet = async () => {
             try {
                 let currentDate = new Date();
