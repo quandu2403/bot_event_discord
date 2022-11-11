@@ -24,6 +24,11 @@ module.exports = {
                     name: `> Thêm thông tin thành viên 👥`,
                     value: '`/info`',
                     inline: false
+                },
+                {
+                    name: `> Thêm thông tin thành viên 👥`,
+                    value: '`/info`',
+                    inline: false
                 }
             ]);
 
